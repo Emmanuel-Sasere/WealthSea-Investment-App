@@ -654,6 +654,10 @@ main .recent-transactions .card-details .card {
     text-align: center;
 }
 
+.delay-message img {
+    width: 150px;
+}
+
 /*  ============== MEDIA QUERIES FOR TABLETS ==========  */
 @media screen and (max-width: 1024px) {
     nav .search-bar {
