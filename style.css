@@ -631,31 +631,20 @@ main .recent-transactions .card-details .card {
 
 
 /* ============= CSS for delay screen =========== */
-.delay-screen {
+.content {
+    display: none;
+}
+.loader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #000b16;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    z-index: 9999;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    align-items: center;
 }
-.delay-screen.hide {
-    opacity: 0;
-    pointer-events: none;
-}
-.delay-message {
-    font-size: 24px;
-    text-align: center;
-}
-
-.delay-message img {
-    width: 150px;
+.loader img {
+    width: 400px;
 }
 
 /*  ============== MEDIA QUERIES FOR TABLETS ==========  */

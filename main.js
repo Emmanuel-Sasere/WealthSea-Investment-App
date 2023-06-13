@@ -82,11 +82,5 @@ let calculate = () => {
 calculateBtn.addEventListener("click", calculate);
 window.addEventListener("load", calculate);
 
-// js for delayscreen 
-function showDelayScreen() {
-    var delayScreen = document.getElementById("delayScreen");
-    delayScreen.classList.remove("hide");
-    setTimeout(function() {
-        delayScreen.classList.add("hide");
-    }, 300);
-}
+
+
