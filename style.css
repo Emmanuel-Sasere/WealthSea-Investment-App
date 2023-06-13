@@ -636,7 +636,7 @@ main .recent-transactions .card-details .card {
 }
 .loader {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     overflow: hidden;
     background: #000b16;
     display: flex;
