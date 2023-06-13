@@ -172,7 +172,7 @@ nav .container {
 }
 
 nav .logo img {
-    width: 3.5rem;
+    width: 8rem;
 }
 
 nav .search-bar {
@@ -636,7 +636,7 @@ main .recent-transactions .card-details .card {
 }
 .loader {
     height: 100vh;
-    /* width: 100vw; */
+    width: 100%;
     overflow: hidden;
     background: #000b16;
     display: flex;
@@ -646,6 +646,186 @@ main .recent-transactions .card-details .card {
 .loader img {
     width: 400px;
 }
+
+
+/* ================ INDEX PAGE (SIGNUP AND LOGIN) =========== */
+.mother{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(asset/most-bg.jpg) ;
+    /* background: linear-gradient(40deg, rgba(36,9,50,1) 0%, rgba(76,26,75,1) 50%, rgba(34,9,48,1) 100%); */
+    column-gap: 30px;
+   
+}
+
+.form{
+    background: transparent;
+    max-width: 500px;
+    width: 100%;
+    padding: 85px;
+    border-radius: 15px;
+    border: 3px solid rgb(75, 96, 121);
+    position: absolute;
+}
+
+header{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input{
+    outline: none;
+    border: 2px solid rgb(75, 96, 121);
+    padding: 0 15px;
+    background: transparent;
+    color: white;
+}
+
+.field input:focus{
+    border-color: rgb(75, 96, 121)4; 
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    transform: translateY(-50%);
+}
+
+.field button{
+    color:#fff;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid rgb(75, 96, 121);
+}
+
+.field button:hover{
+    background-color: #025eae;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.form-link span,
+.form-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.form a {
+    text-decoration: none;
+    color: #0171d3;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 36px 0;
+    height: 1px;
+    width: 100%;
+}
+
+.line::before{
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color: #8b8b8b;
+    padding: 0px 15px;
+    transform: translate(-50%, -50%);
+}
+
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-options p {
+    color: white;
+}
+
+a.facebook{
+    color: #fff;
+    background-color: #4267b2;
+}
+
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.none{
+  display: none;
+}
+
+.facebook-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+a.google{
+    border: 1px solid #cacaca;
+}
+
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: whitesmoke;
+}
+
+/* ======== END OF INDEX ============= */
 
 /*  ============== MEDIA QUERIES FOR TABLETS ==========  */
 @media screen and (max-width: 1024px) {
