@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>wealthsea/Login</title>
+    <link rel="stylesheet" href="index.css" />
+    <title>WealthSea Investment App</title>
     <link rel="shortcut icon" href="asset/wealthsea favicon.png" type="image/x-icon">
-          <!-- ====== JQUERY CDN LINK ======== -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>       
+     <!-- ====== JQUERY CDN LINK ======== -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
   </head>
   <body>
+    
     <div class="loader">
-        <div>
-            <img src="asset/wealthsea logo (1).png" alt="">
-        </div>
-    </div>
-
-    <div class="content" id="hidden" >
-        
-    <section class="mother forms">
+      <div>
+          <img src="asset/wealthsea logo (1).png" alt="">
+      </div>
+  </div>
+   
+  <div class="content" id="hidden" >
+      <section class="container forms">
         <div class="form login">
           <div class="form-content">
             <header>Login to your account</header>
@@ -55,32 +56,30 @@
             <div class="form-link">
               <span
                 >Don't have an account?
-                <a href="signup.html" class="link signup-link">Signup</a></span
+                <a href="index.html" class="link signup-link">Signup</a></span
               >
             </div>
           </div>
   
           <div class="line"></div>
   
-          <div class="media-options">
+          <!-- <div class="media-options">
             <a href="#" class="field facebook">
               <i class="bx bxl-facebook facebook-icon"></i>
               <span>Login with Facebook</span>
             </a>
-          </div>
+          </div> -->
   
           <div class="media-options">
             <a href="#" class="field google">
               <i class="bx bxl-google facebook-icon"></i>
               <span>Login with Google</span>
             </a>
-            <br>
-            <p id="user">Logged in as:</p>
           </div>
         </div>
       </section>
+    
     </div>
-
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
     <script src="index.js"></script>

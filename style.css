@@ -317,6 +317,16 @@ main aside .updates {
     padding: var(--card-padding);
 }
 
+.log {
+    background: var(--color-danger-light);
+    border-radius: var(--border-radius-1);
+    text-align: left;
+    padding: var(--card-padding);
+}
+.log-btn {
+    padding: 5px;
+}
+
 main aside .updates i {
     font-size: 2rem;
 }

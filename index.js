@@ -1,79 +1,88 @@
+// Import the functions you need from the SDKs you need
+//   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-// INDEX LOGIN & SIGNUP 
-// Fire base config
-const firebaseConfig = {
-    apiKey: "AIzaSyDI1zFNIqfNOHWC69s8NBZsSjGIwFePU-I",
-    authDomain: "authentication-6c26f.firebaseapp.com",
-    projectId: "authentication-6c26f",
-    storageBucket: "authentication-6c26f.appspot.com",
-    messagingSenderId: "762499727432",
-    appId: "1:762499727432:web:f86b302b79b9816de1d87d"
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBa1dSE295kZ6k1c1u7F2qA04BJjt1kEAg",
+    authDomain: "wealth-sea-auth.firebaseapp.com",
+    projectId: "wealth-sea-auth",
+    storageBucket: "wealth-sea-auth.appspot.com",
+    messagingSenderId: "720930846646",
+    appId: "1:720930846646:web:7ecf917e1b28500ab77317"
   };
 
-//Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
 
-const auth = firebase.auth();
-
-//Signup Function
-let signUpButton = document.getElementById("signup");
-
+//   Signup function
+let signUpButton = document.getElementById("signup")
 signUpButton.addEventListener("click", (e) => {
+    //prevent default form submission behaviour
     e.preventDefault();
-    console.log("signup click");
+    console.log("clicked");
 
     var email = document.getElementById("inputEmail");
     var password = document.getElementById("inputPassword");
 
     auth
-    .createUserWithEmailAndPassword(email.value, password.value)
-    .then((userCredential) => {
-        location.reload();
-        // signed in 
-        var user = userCredential.user;
-        console.log("user, user.mail");
-    })
-    .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log("error code", errorCode);
-        console.log("error message", errorMessage);
-    });
+        .createUserWithEmailAndPassword(email.value, password.value)
+        .then((userCredential) => {
+            location.reload();
+            alert("user signed up successful")
+
+            // signed in
+
+            var user = userCredential.user;
+            console.log("user, user.email");
+        })
+
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log("error code", errorCode);
+            console.log("error Message", errorMessage);
+            alert(errorMessage);
+        });
 });
 
 
 
-//Signin Function
-let signInButton = document.getElementById("signin");
+//  signin function
 
+let signInButton = document.getElementById("signin");
 signInButton.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("signin click");
+    console.log("sign in clicked");
 
-    var email = document.getElementById("inputEmail");
-    var password = document.getElementById("inputPassword");
 
-    auth
+
+var email = document.getElementById("inputEmail");
+var password = document.getElementById("inputPassword");
+
+
+auth 
     .signInWithEmailAndPassword(email.value, password.value)
-    .then((userCredential) =>{
-        location.reload();
-        // sign in 
+    .then((userCredential) => {
         var user = userCredential.user;
-        console.log("user, user.mail");
+        console.log("user", user.email);
         window.location = "home.html";
+        alert("user signed up successful")
     })
-    
+
     .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log("error code", errorCode);
-        console.log("error message", errorMessage);
+        alert(errorMessage);
     });
+
 });
 
 
- // loader -->
-   $(window).on('load',function(){
-      $(".loader").fadeOut(5000); 
-     $(".content").fadeIn(1000); 
+// loader
+$(window).on('load',function(){
+    $(".loader").fadeOut(4000); 
+   $(".content").fadeIn(1000); 
 })

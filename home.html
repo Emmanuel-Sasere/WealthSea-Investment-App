@@ -41,7 +41,7 @@
                     <div class="profile-photo">
                         <img src="asset/pro-pic.jpg" alt="Profile Picture">
                     </div>
-                    <h5>Dev Sasem</h5>
+                    <!-- <h5> dev sasem </h5> -->
                     <i class='bx bx-chevron-down bx-sm'></i>
                 </div>
                 <button id="menu-btn">
@@ -77,9 +77,9 @@
                     <i class='bx bx-credit-card bx-sm'></i>
                     <h4>Transaction</h4>
                 </a>
-                <a href="interest.html">
+                <a href="./Budgeting app extension/budget.html">
                     <i class='bx bxs-pie-chart-alt-2 bx-sm'></i>
-                    <h4>Analytics</h4>
+                    <h4>Budgeting</h4>
                 </a>
                 <a href="#">
                     <i class='bx bx-message bx-sm'></i>
@@ -95,7 +95,19 @@
                 </a>
             </div>
             <!-- ======== END OF SIDEBAR ======== -->
-
+            <!-- ===== LOG ======= -->
+            <div class="log">
+                <div class=" login">
+                    <p id="user" class="log-as">Logged in as: </p>
+        
+                    <div class="field button-field">
+                        
+                        
+                        <button id="signout" type="submit" class="log-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ===== LOG COMPLETE === -->
             <div class="updates">
                 <i class='bx bx-history bx-sm'></i>
                 <h4>updates Available</h4>
@@ -604,8 +616,12 @@
     <!-- ============END OF ASIDE ================= -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
 
     <!-- =================== JS LINK ==================== -->
     <script src="main.js"></script>
+    <script src="signout.js"></script>
 </body>
 </html>
