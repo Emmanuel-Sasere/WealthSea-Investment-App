@@ -41,7 +41,7 @@
     max-width: 420px;
     width: 100%;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 0px  100px 0px 100px;
     border: 3px solid #020b24;
     position: absolute;
 }
@@ -159,43 +159,16 @@ form{
     transition: 2s all ease;
 }
 
-/* a.facebook{
-    color: #fff;
-    background-color: #4267b2;
-}
 
-a.facebook .facebook-icon{
-    height: 28px;
-    width: 28px;
-    color: #0171d3;
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-} */
+
 
 .none{
   display: none;
 }
 
-/* .facebook-icon{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-} */
 
-a.google{
-    border: 1px solid #cacaca;
-}
 
-a.google span{
-    font-weight: 500;
-    opacity: 0.6;
-    color: white;
-}
+
 
 @media screen and (max-width:991px) {
     .loader img {
