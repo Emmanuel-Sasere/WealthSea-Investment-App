@@ -171,7 +171,7 @@ nav .container {
     margin: 0 auto;
 }
 
-nav .logo img {
+nav .logo  img {
     width: 8rem;
 }
 
@@ -318,13 +318,12 @@ main aside .updates {
 }
 
 .log {
-    background: var(--color-danger-light);
-    border-radius: var(--border-radius-1);
+    background: #27282f;
+    border-radius: var(--border-radius-2);
     text-align: left;
-    padding: var(--card-padding);
 }
 .log-btn {
-    padding: 5px;
+    padding: 7px 4px;
 }
 
 main aside .updates i {
@@ -675,9 +674,9 @@ main .recent-transactions .card-details .card {
 
 .form{
     background: transparent;
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
-    padding: 85px;
+    padding: 80px;
     border-radius: 15px;
     border: 3px solid rgb(75, 96, 121);
     position: absolute;
@@ -920,6 +919,9 @@ a.google span{
     nav.profile-area {
         gap: 2.6rem;
     }
+    #user {
+        display: none;
+    }
 
     nav .profile h5,
     nav .profile i {
@@ -935,5 +937,9 @@ a.google span{
         align-items: flex-start;
         margin-top: 3rem;
         gap: 1.4rem;
+    }
+
+    nav .logo  img {
+        width: 5rem;
     }
 }
